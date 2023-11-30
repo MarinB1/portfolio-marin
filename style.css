@@ -42,3 +42,7 @@
 i + span{
     margin-left:20px;
   }
+.mal:hover{
+    transform: scale(1.05);
+    transform: 0.2s ease;
+}
