@@ -33,3 +33,8 @@
 .vl {
     padding-top: 1rem;
   }
+.zc:hover{
+    color: azure;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
