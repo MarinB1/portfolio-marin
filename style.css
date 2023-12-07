@@ -46,3 +46,44 @@ i + span{
     transform: scale(1.05);
     transform: 0.2s ease;
 }
+
+
+
+.b {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #f5a2c8, #ffffff, #7a6da2);
+    height: 100vh;
+    padding: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.todo-container {
+    width: 45%;
+    border: 1px solid #040404;
+    border-width: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.done-button {
+    margin-left: auto;
+}
