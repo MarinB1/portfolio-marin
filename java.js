@@ -5,7 +5,6 @@ const jsonData = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Prikazi postojeće zadatke iz JSON-a
     displayTasks(jsonData);
 });
 
@@ -17,7 +16,7 @@ function addTask() {
         const newTask = { text: taskText };
         jsonData.push(newTask);
         displayTasks(jsonData);
-        inputElement.value = ''; // Clear input field after adding the task
+        inputElement.value = ''; 
     }
 }
 
@@ -39,17 +38,17 @@ function displayTasks(tasks) {
 function moveItem(event) {
     const clickedElement = event.target;
 
-    // Provera da li je kliknuto na <button> element
+    
     if (clickedElement.tagName === 'BUTTON' && clickedElement.classList.contains('done-button')) {
         const listItem = clickedElement.parentNode;
         const sourceListId = listItem.parentNode.id;
         const destinationListId = sourceListId === 'todo-list-1' ? 'todo-list-2' : 'todo-list-1';
 
-        // Kopiranje elementa iz jedne liste u drugu
+        
         const clonedElement = listItem.cloneNode(true);
         document.getElementById(destinationListId).appendChild(clonedElement);
 
-        // Uklanjanje originalnog elementa iz prvobitne liste
+        
         listItem.parentNode.removeChild(listItem);
     }
 }
